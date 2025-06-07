@@ -38,10 +38,6 @@ If you like to test the program, after downloading go to -> \Nebim Formatlayıc�
 
 ## 🖥️ Screenshots from the Program
 
-![ss3](https://github.com/user-attachments/assets/2ca64c18-40d4-45bd-9de1-e9293cff0638)
-![ss2](https://github.com/user-attachments/assets/6f30bbde-524b-4ee4-a785-659e945d88fe)
-![Снимок экрана 2025-06-07 192027](https://github.com/user-attachments/assets/d1a80362-5800-44ca-8561-87fbf9aa756b)
-
 <p align="center">
   <img src="https://github.com/user-attachments/assets/d1a80362-5800-44ca-8561-87fbf9aa756b" alt="Image 1" width="30%" style="margin-right: 1%;">
   <img src="https://github.com/user-attachments/assets/6f30bbde-524b-4ee4-a785-659e945d88fe" alt="Image 2" width="30%" style="margin-right: 1%;">
