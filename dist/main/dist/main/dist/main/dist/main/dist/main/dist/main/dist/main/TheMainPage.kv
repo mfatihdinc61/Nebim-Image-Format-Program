@@ -1,0 +1,143 @@
+<ZerothScreen>:
+    FloatLayout:
+
+        canvas.before:
+            Rectangle:
+                pos: self.pos
+                size: self.size
+                source: 'homepage.png'
+
+        Button:
+            text: 'Giriş'
+            size_hint: 0.2, 0.05
+            on_press: root.sayfayaal()
+            pos_hint: {"center_x":0.5,"center_y":0.075}
+
+
+
+<FirstScreen>:
+    FloatLayout:
+
+        canvas.before:
+            Rectangle:
+                pos: self.pos
+                size: self.size
+                source: 'A_black_image.jpg'
+
+        TextInput:
+            size_hint : 0.5, 0.05
+            pos_hint:{"center_x":0.5,"center_y":0.8}
+            id: theinput
+
+        Button:
+            text: 'Resimleri Formatla'
+            size_hint: 0.25, 0.05
+            on_press: root.theformer()
+            pos_hint: {"center_x":0.5,"center_y":0.73}
+
+        Label:
+            text: 'Formatlamak istediğiniz resimlerin dizinini girin.'
+            size_hint: 0.2, 0.05
+            pos_hint: {"center_x":0.5, "center_y": 0.68}
+            italic: True
+            id: formatid
+
+
+        Label:
+            text: 'İlkadımla'
+            size_hint : 0.2, 0.1
+            pos_hint:{"center_x":0.5,"center_y":0.47}
+
+        CheckBox:
+            pos_hint:{"center_x":0.4,"center_y":0.47}
+            size_hint: None, None
+            size: sp(32), sp(32)
+            id: ilkadimbox
+
+
+        Label:
+            text: 'Filetle'
+            size_hint : 0.2, 0.1
+            pos_hint:{"center_x":0.5,"center_y":0.44}
+
+        CheckBox:
+            pos_hint:{"center_x":0.4,"center_y":0.44}
+            size_hint: None, None
+            size: sp(32), sp(32)
+            id: filetbox
+
+        Label:
+            text: 'Garsonla'
+            size_hint : 0.2, 0.1
+            pos_hint:{"center_x":0.5, "center_y":0.41}
+
+        CheckBox:
+            pos_hint:{"center_x":0.4,"center_y":0.41}
+            size_hint: None, None
+            size: sp(32), sp(32)
+            id: garsonbox
+
+        Label:
+            text: 'Patikle'
+            size_hint : 0.2, 0.1
+            pos_hint:{"center_x":0.5, "center_y":0.38}
+
+        CheckBox:
+            pos_hint:{"center_x":0.4,"center_y":0.38}
+            size_hint: None, None
+            size: sp(32), sp(32)
+            id: patikbox
+
+        Label:
+            text: 'Bebele'
+            size_hint : 0.2, 0.1
+            pos_hint:{"center_x":0.5, "center_y":0.35}
+
+        CheckBox:
+            pos_hint:{"center_x":0.4,"center_y":0.35}
+            size_hint: None, None
+            size: sp(32), sp(32)
+            id: bebebox
+
+        TextInput:
+            size_hint : 0.5, 0.05
+            id: theinput2
+            pos_hint:{"center_x":0.5,"center_y":0.27}
+
+        Button:
+            text: 'Resimleri Çoğalt'
+            size_hint: 0.25, 0.05
+            on_press: root.thecreater()
+            pos_hint: {"center_x":0.5,"center_y":0.20}
+
+        Label:
+            text: 'Çoğaltmak istediğiniz resimlerin dizinini girin.'
+            size_hint: 0.2, 0.05
+            pos_hint: {"center_x":0.5, "center_y": 0.15}
+            italic: True
+            id: cogaltid
+
+
+        Button:
+            text: ""
+            on_release: root.sayfaanaya()
+            size_hint: 0.1, 0.1
+            pos_hint: {"center_x":0.1, "center_y": 0.9}
+
+            Image:
+                source: 'images/backpng.png'
+                center_x: self.parent.center_x
+                center_y: self.parent.center_y
+
+
+
+
+
+<RootWidget>:
+
+    ZerothScreen:
+        id: zeroth_screen
+        name: 'zeroth_screen'
+    FirstScreen:
+        id: first_screen
+        name: 'first_screen'
